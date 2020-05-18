@@ -81,23 +81,245 @@ class _FoodApplicationMainPageState extends State<FoodApplicationMainPage> {
                     scrollDirection: Axis.horizontal,
                     children: <Widget>[
                       Container(
-                          margin: EdgeInsets.only(top: 8, bottom: 8, right: 8),
-                          width: MediaQuery.of(context).size.width / 2.3,
-                          decoration: BoxDecoration(color: Colors.red,
+                        margin: EdgeInsets.only(top: 8, bottom: 8, right: 8),
+                        width: MediaQuery.of(context).size.width / 2.3,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(
+                                color: Colors.black.withOpacity(0.1),
+                                spreadRadius: 2,
+                                blurRadius: 3)
+                          ],
                           borderRadius: BorderRadius.circular(8),
-                          )),
+                        ),
+                        child: Column(
+                          children: <Widget>[
+                            Expanded(
+                                flex: 6,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                      image: DecorationImage(
+                                          image: NetworkImage(
+                                            "https://cdn.pixabay.com/photo/2017/01/11/11/33/cake-1971552_960_720.jpg",
+                                          ),
+                                          fit: BoxFit.cover),
+                                      borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(8),
+                                        topRight: Radius.circular(8),
+                                      )),
+                                )),
+                            Expanded(
+                                flex: 4,
+                                child: Padding(
+                                  padding: const EdgeInsets.only(
+                                      left: 16, right: 16, top: 7, bottom: 4),
+                                  child: Row(
+                                    children: <Widget>[
+                                      Align(
+                                        alignment: Alignment.topCenter,
+                                        child: CircleAvatar(
+                                          radius: 16,
+                                        ),
+                                      ),
+                                      SizedBox(width: 10),
+                                      Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: <Widget>[
+                                          Text("Chicken pasta",
+                                              style: TextStyle(
+                                                  fontSize: 12,
+                                                  fontWeight: FontWeight.bold)),
+                                          Row(
+                                            children: <Widget>[
+                                              Text("by",
+                                                  style: TextStyle(
+                                                    fontSize: 12,
+                                                    fontWeight: FontWeight.bold,
+                                                  )),
+                                              Text("Jack Mike",
+                                                  style: TextStyle(
+                                                      fontSize: 12,
+                                                      fontWeight:
+                                                          FontWeight.bold,
+                                                      color: Colors.green))
+                                            ],
+                                          ),
+                                          Text("3k recommended",
+                                              style: TextStyle(
+                                                fontSize: 12,
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.grey,
+                                              ))
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                )),
+                          ],
+                        ),
+                      ),
                       Container(
-                          margin: EdgeInsets.only(top: 8, bottom: 8, right: 8),
-                          width: MediaQuery.of(context).size.width / 2.3,
-                          decoration: BoxDecoration(color: Colors.red,
+                        margin: EdgeInsets.only(top: 8, bottom: 8, right: 8),
+                        width: MediaQuery.of(context).size.width / 2.3,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(
+                                color: Colors.black.withOpacity(0.1),
+                                spreadRadius: 2,
+                                blurRadius: 3)
+                          ],
                           borderRadius: BorderRadius.circular(8),
-                          )),
+                        ),
+                        child: Column(
+                          children: <Widget>[
+                            Expanded(
+                                flex: 6,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                      image: DecorationImage(
+                                          image: NetworkImage(
+                                            "https://cdn.pixabay.com/photo/2017/01/11/11/33/cake-1971552_960_720.jpg",
+                                          ),
+                                          fit: BoxFit.cover),
+                                      borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(8),
+                                        topRight: Radius.circular(8),
+                                      )),
+                                )),
+                            Expanded(
+                                flex: 4,
+                                child: Padding(
+                                  padding: const EdgeInsets.only(
+                                      left: 16, right: 16, top: 7, bottom: 4),
+                                  child: Row(
+                                    children: <Widget>[
+                                      Align(
+                                        alignment: Alignment.topCenter,
+                                        child: CircleAvatar(
+                                          radius: 16,
+                                        ),
+                                      ),
+                                      SizedBox(width: 10),
+                                      Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: <Widget>[
+                                          Text("Chicken pasta",
+                                              style: TextStyle(
+                                                  fontSize: 12,
+                                                  fontWeight: FontWeight.bold)),
+                                          Row(
+                                            children: <Widget>[
+                                              Text("by",
+                                                  style: TextStyle(
+                                                    fontSize: 12,
+                                                    fontWeight: FontWeight.bold,
+                                                  )),
+                                              Text("Jack Mike",
+                                                  style: TextStyle(
+                                                      fontSize: 12,
+                                                      fontWeight:
+                                                          FontWeight.bold,
+                                                      color: Colors.green))
+                                            ],
+                                          ),
+                                          Text("3k recommended",
+                                              style: TextStyle(
+                                                fontSize: 12,
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.grey,
+                                              ))
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                )),
+                          ],
+                        ),
+                      ),
                       Container(
-                          margin: EdgeInsets.only(top: 8, bottom: 8, right: 8),
-                          width: MediaQuery.of(context).size.width / 2.3,
-                          decoration: BoxDecoration(color: Colors.red,
+                        margin: EdgeInsets.only(top: 8, bottom: 8, right: 8),
+                        width: MediaQuery.of(context).size.width / 2.3,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(
+                                color: Colors.black.withOpacity(0.1),
+                                spreadRadius: 2,
+                                blurRadius: 3)
+                          ],
                           borderRadius: BorderRadius.circular(8),
-                          )),
+                        ),
+                        child: Column(
+                          children: <Widget>[
+                            Expanded(
+                                flex: 6,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                      image: DecorationImage(
+                                          image: NetworkImage(
+                                            "https://cdn.pixabay.com/photo/2017/01/11/11/33/cake-1971552_960_720.jpg",
+                                          ),
+                                          fit: BoxFit.cover),
+                                      borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(8),
+                                        topRight: Radius.circular(8),
+                                      )),
+                                )),
+                            Expanded(
+                                flex: 4,
+                                child: Padding(
+                                  padding: const EdgeInsets.only(
+                                      left: 16, right: 16, top: 7, bottom: 4),
+                                  child: Row(
+                                    children: <Widget>[
+                                      Align(
+                                        alignment: Alignment.topCenter,
+                                        child: CircleAvatar(
+                                          radius: 16,
+                                        ),
+                                      ),
+                                      SizedBox(width: 10),
+                                      Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: <Widget>[
+                                          Text("Chicken pasta",
+                                              style: TextStyle(
+                                                  fontSize: 12,
+                                                  fontWeight: FontWeight.bold)),
+                                          Row(
+                                            children: <Widget>[
+                                              Text("by",
+                                                  style: TextStyle(
+                                                    fontSize: 12,
+                                                    fontWeight: FontWeight.bold,
+                                                  )),
+                                              Text("Jack Mike",
+                                                  style: TextStyle(
+                                                      fontSize: 12,
+                                                      fontWeight:
+                                                          FontWeight.bold,
+                                                      color: Colors.green))
+                                            ],
+                                          ),
+                                          Text("3k recommended",
+                                              style: TextStyle(
+                                                fontSize: 12,
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.grey,
+                                              ))
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                )),
+                          ],
+                        ),
+                      ),
                     ],
                   ),
                 )
@@ -115,50 +337,64 @@ class _FoodApplicationMainPageState extends State<FoodApplicationMainPage> {
                 Container(
                   margin: EdgeInsets.only(top: 12),
                   padding: EdgeInsets.only(left: 16),
-                    height: MediaQuery.of(context).size.height / 4.5,
-                    decoration: BoxDecoration(color: Colors.grey[200],
+                  height: MediaQuery.of(context).size.height / 4.5,
+                  decoration: BoxDecoration(
+                    color: Colors.grey[200],
                     borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(12),
-                      bottomLeft: Radius.circular(12)
-                    ),
-                    ),
-                    child: ListView(
-                      scrollDirection: Axis.horizontal,
-                      children: <Widget>[
-                        Container(
-                          margin: EdgeInsets.only(right: 16),
-                          width: MediaQuery.of(context).size.width / 3.5,
-                          decoration: BoxDecoration(
-                            color: Colors.blue,
-                          ),
+                        topLeft: Radius.circular(12),
+                        bottomLeft: Radius.circular(12)),
+                  ),
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: <Widget>[
+                      Container(
+                        margin: EdgeInsets.only(right: 16),
+                        width: MediaQuery.of(context).size.width / 3.5,
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
                         ),
-
-                        Container(
-                          margin: EdgeInsets.only(right: 16),
-                          width: MediaQuery.of(context).size.width / 3.5,
-                          decoration: BoxDecoration(
-                            color: Colors.blue,
-                          ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(right: 16),
+                        width: MediaQuery.of(context).size.width / 3.5,
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
                         ),
-
-                        Container(
-                          margin: EdgeInsets.only(right: 16),
-                          width: MediaQuery.of(context).size.width / 3.5,
-                          decoration: BoxDecoration(
-                            color: Colors.blue,
-                          ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(right: 16),
+                        width: MediaQuery.of(context).size.width / 3.5,
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
                         ),
-
-                        Container(
-                          margin: EdgeInsets.only(right: 16),
-                          width: MediaQuery.of(context).size.width / 3.5,
-                          decoration: BoxDecoration(
-                            color: Colors.blue,
-                          ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(right: 16),
+                        width: MediaQuery.of(context).size.width / 3.5,
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
                         ),
-                      ],
-                    ),
-                    )
+                      ),
+                    ],
+                  ),
+                )
+              ],
+            ),
+            SizedBox(height: 32),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text("Top Food Reviews",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16,
+                    )),
+                Container(
+                  margin: EdgeInsets.only(top: 16, right: 16, bottom: 16),
+                  height: MediaQuery.of(context).size.height / 7,
+                  child: Placeholder(),
+                )
               ],
             )
           ],
